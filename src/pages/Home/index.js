@@ -1,0 +1,24 @@
+import Image from '../../common/containers/Image'
+import Menu from '../../common/containers/Menu'
+import Footer from '../../common/containers/Footer'
+import Presentation from '../../common/containers/Presentation'
+import Gallery from '../../common/containers/Gallery';
+import Skills from '../../common/containers/Skills';
+import Form from '../../common/containers/Form'
+import './style.css';
+
+function Home() {
+    return (
+        <main id='main'>
+            <Image />
+            <Menu />
+            <Presentation />
+            <Gallery />
+            <Skills />
+            <Form />
+            <Footer />
+        </main>
+    )
+}
+
+export default Home;

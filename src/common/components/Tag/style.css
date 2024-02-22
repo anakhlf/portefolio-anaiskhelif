@@ -1,0 +1,12 @@
+.tag {
+    background-color: #2D0003;
+    color: white;
+    padding: 2px 15px;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.tag h5 {
+    font-weight: 400;
+    text-transform: uppercase;
+}

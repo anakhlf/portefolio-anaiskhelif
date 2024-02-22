@@ -1,0 +1,16 @@
+#presentation {
+    background-color: #2C322E;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 360px ;
+    color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#presentation p {
+    width: 719px;
+    line-height: 1.5;
+}
