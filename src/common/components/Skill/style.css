@@ -1,0 +1,69 @@
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f1ef;
+    color: black;
+    padding: 25px;
+    margin-bottom: 20px;
+    max-width: 216.6px;
+    opacity: 0;
+    transform: scale(1) translateY(-50px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease-in-out, opacity 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Appliquer les transitions de base */
+}
+
+.skill-card.animate {
+    transform: translateY(0); 
+    opacity: 1;
+}
+
+#graphisme.animate {
+    transition-delay: 0.2s; /* Retarder la transition pour #graphisme */
+}
+
+#marketing.animate {
+    transition-delay: 0.4s; /* Retarder la transition pour #marketing */
+}
+
+#com.animate {
+    transition-delay: 0.6s; /* Retarder la transition pour #com */
+}
+
+.skill-card:hover {
+    transform: scale(1.02); /* Utiliser la fonction scale pour l'effet de zoom */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skill-logo {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.skill-logo .icon {
+    font-size: 45px;
+    color: #333;
+}
+
+.skill-details {
+    flex: 1 1 auto;
+}
+
+.title {
+    font-size: 20px;
+    color: #333;
+    margin: 0 0 10px;
+    font-weight: 900px;
+    letter-spacing: -1px;
+    height: 60px;
+}
+
+.skill-list {
+    padding-left: 15px;
+}
+
+.skill-list p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+}

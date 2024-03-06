@@ -16,3 +16,10 @@ function App() {
 }
 
 export default App;
+
+//revoir
+//transition ouverture modale
+//image : trouver le texte + changer image
+
+
+

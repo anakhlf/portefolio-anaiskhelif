@@ -1,0 +1,26 @@
+[
+    {
+        "name": "ArgentBank",
+        "description": "Dans le cadre de la conception d'une application web React pour un nouveau système d'authentification des utilisateurs, notre équipe a été chargée de développer la phase 1, qui se concentre sur l'authentification des utilisateurs. La mission principale était de créer une application web complète et responsive en utilisant React, avec une gestion d'état via Redux. Les pages principales comprenaient la page d'accueil, la page de connexion et la page de profil. Les fonctionnalités principales de l'application comprenaient : Possibilité pour l'utilisateur de visiter la page d'accueil. Fonctionnalité de connexion permettant à l'utilisateur de se connecter au système, avec gestion des erreurs pour les identifiants incorrects. Fonctionnalité de déconnexion de l'utilisateur. Accès restreint aux informations du profil de l'utilisateur après une connexion réussie. Capacité à modifier le pseudo de l'utilisateur, mais pas son nom ni son prénom. Les routes API nécessaires pour interagir avec le backend étaient déjà fournies par l'équipe backend, avec une documentation Swagger incluse dans le référentiel. Un accent particulier a été mis sur l'optimisation du code et des ressources, en suivant les bonnes pratiques de Green Code. Cela impliquait notamment l'optimisation des images et la création de composants réutilisables. Pour la phase 2 du projet, qui impliquait la gestion des transactions, une réflexion a été entamée sur la modélisation des routes API backend en fonction des besoins prévus, en suivant les directives de Swagger. Cela impliquait de décrire en détail chaque endpoint, y compris la méthode HTTP, la route, la description de l'endpoint, les paramètres possibles et les réponses attendues. Le projet a été mené en suivant une approche collaborative, avec des revues de code régulières et des discussions sur les choix d'architecture et de conception.",
+        "date": "2023-2024",
+        "tags": ["React", "Redux", "Authentication"],
+        "image": "argentbank.webp",
+        "githubLink": "https://github.com/anakhlf/ArgentBank-website.git"
+    },
+    {
+        "name": "Portefolio Nina Carducci",
+        "description": "La mission vise à améliorer les performances du site, à renforcer sa visibilité sur les moteurs de recherche grâce au référencement local, à optimiser sa présence sur les réseaux sociaux et à garantir l'accessibilité à tous les utilisateurs. Un rapport d'optimisation sera fourni pour documenter toutes les actions entreprises et leur impact sur le site.",
+        "date": "2023-2024",
+        "tags": ["SEO", "Accessibilité", "Référencement"],
+        "image": "nina.webp",
+        "githubLink": "https://anakhlf.github.io/op-p9-nina/"
+    },
+    {
+        "name": "Kasa",
+        "description": "Kasa est un projet visant à développer une application React en conformité avec les maquettes Figma fournies, ainsi que les contraintes techniques et fonctionnelles spécifiées. Initialement prévu sans intégration back-end, l'application utilisera les données des 20 dernières annonces de logements contenues dans un fichier JSON. Les directives de développement exigent l'utilisation de Create React App ou Vite, ainsi que le respect des coding guidelines de Kasa pour garantir un code de qualité. Les maquettes Figma, organisées en logique de composants, offrent les ressources nécessaires telles que le logo et les icônes, tandis que des prototypes sont disponibles pour visualiser les animations attendues. Les fonctionnalités principales incluent un défilement de galerie spécifique et des Collapses avec des comportements prédéfinis. L'objectif est de créer une interface utilisateur conforme aux maquettes, tout en assurant une gestion efficace des données et une qualité de code optimale.",
+        "date": "2023-2024",
+        "tags": ["React", "React Router", "Create React App"],
+        "image": "kasa.webp",
+        "githubLink": "https://github.com/anakhlf/op-p8.git"
+    }
+]

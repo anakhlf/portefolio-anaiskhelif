@@ -3,9 +3,9 @@ import "./style.css"
 function Tag (tag){
     return (
         <article className="tag">
-            <h5>
+            <p>
                 {tag.name}
-            </h5>
+            </p>
         </article>
     )
 }

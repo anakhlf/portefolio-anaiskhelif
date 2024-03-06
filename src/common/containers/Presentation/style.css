@@ -1,9 +1,9 @@
 #presentation {
-    background-color: #2C322E;
+    background-color: #523b34;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 50px 360px ;
+    padding: 50px 0px;
     color: #FFFFFF;
     text-align: center;
     justify-content: center;
@@ -11,6 +11,17 @@
 }
 
 #presentation p {
-    width: 719px;
     line-height: 1.5;
+    width: 70%;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    #presentation {
+        width: 100%;
+    }
+    #presentation p {
+        font-size: 12px;
+    }
 }

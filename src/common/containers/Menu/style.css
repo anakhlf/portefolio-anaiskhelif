@@ -1,6 +1,96 @@
 #menu {
     display: flex;
     justify-content: space-between;
-    background-color: #D9D9D9;
-    padding: 0 121px 0 121px;
+    align-items: center;
+    height: 50px;
+    gap: 10px;
+    background-color: rgb(239, 239, 239);
+    width: 100%;
+}
+
+.fixed-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#nom-logo {
+    font-family: 'Valkyrie-Bold';
+    color: #523b34;
+    font-weight: 900;
+    padding-left: 10vh;
+    
+}
+
+.menu.open {
+    display: block;
+}
+
+.menu-toggle {
+    display: none;
+    position: absolute;
+    margin-top: 18px;
+    right: 121px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    #menu {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width:100%;
+    }
+    #nav {
+        z-index: 1001;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-right: 0;
+    }
+    
+    #nav.open {
+        display: block;
+        margin-top: -11px;
+    }
+    #nom-logo {
+        font-size: 20px;
+        margin-top: 11px;
+        padding: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav ul {
+
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav.open ul {
+        display: block;
+        background-color: white;
+    }
+
+    .menu-toggle {
+        right : 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #nav ul {
+        display: block;
+    }
 }

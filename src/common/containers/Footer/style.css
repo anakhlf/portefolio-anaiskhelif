@@ -1,9 +1,33 @@
 #footer {
-    background-color: black;
+    background-color: #1a1a1a;
     color: white;
     width: 100%;
-    height: 100px;
+    height: 150px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#contact-links {
+    display: flex;
+    gap: 10px;
+}
+
+.fa-envelope, .fa-linkedin-in {
+    font-size: 15px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 50%; 
+    padding: 14px;
+    margin-bottom: 20px;
+    transition: font-size 0.1s ease-in-out; 
+}
+
+.fa-envelope:hover, .fa-linkedin-in:hover {
+    font-size: 18px ;
+}
+
+#footer p {
+    font-size: 12px;
 }

@@ -1,15 +1,57 @@
 .work-article {
     width: 241px;
+    position: relative;
+
 }
 
 
 .work-title {
+    position: relative;
     width: 100%;
     height: 241px;
-    background-color: black;
+    background-color: #1a1a1a;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+    transition: background-size 0.5s ease-in-out; 
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.work-title:hover {
+    background-size: 110%; 
 }
 
 .div-tag {
     display: flex;
+    flex-wrap: wrap;
     gap: 7px;
+    margin-top:7px ;
+}
+
+.title-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 221px;
+    background: linear-gradient(rgba(0,0,0,1), transparent);
+    padding: 10px;
+    color: white;
+    display: none; /* Par défaut, le titre est caché */
+    text-align: left;
+}
+
+.title-overlay.show {
+    display: block; /* Afficher le titre uniquement lorsque survolé */
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 425px) {
+    .work-article {
+        width: 100%;
+        padding: 0 20px;
+    }
 }

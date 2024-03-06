@@ -1,14 +1,156 @@
 #image {
+    position: relative;
+    overflow: hidden;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    background-color: #E8DFDA;
-    overflow: hidden;
 }
 
 #image p {
+    color: white;
+    position: relative;
     font-size: 21px;
+}
+
+#image h1 {
+    z-index: 2;
+    color: white;
+}
+
+#image p, #image h1 {
+    overflow: hidden;
+    transform: translateY(100%);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #image {
+        padding: 0px; 
+        text-align: center;
+        gap: 10px;
+        height:100vh;
+    }
+    
+    .clip {
+        height:100vh;
+    }
+
+    #image::before {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    }
+
+    #image h1 {
+        font-size: 30px;
+    }
+    
+    #image p {
+        font-size: 14px; 
+        padding: 0 30px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    #image {
+        gap: 7px;
+        height:100vh;
+    }
+
+    .clip {
+        height:100vh;
+    }
+    
+    #image h1 {
+        font-size: 16px; 
+        padding: 0 20px;
+    }
+
+    #image p {
+        font-size: 12px;
+    }
+}
+
+  @keyframes clip1{
+    0%{clip-path: polygon(0% -50%, 50% -50%, -50% 50%, -100% 50% );}
+    100%{clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);}
+  }
+  @keyframes clipa{
+    0%{clip-path: polygon(-5% -55%, 55% -45%, -45% 55%, -95% 55% );}
+    100%{clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);}
+  }
+  @keyframes clip2{
+    0%{clip-path: polygon(50% -50%, 100% -50%, 200% 50%, 150% 50%);}
+    100%{clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);}
+  }
+  @keyframes clipb{
+    0%{clip-path: polygon(40% -60%, 100% -50%, 190% 40%, 150% 50%);}
+    100%{clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);}
+  }
+  @keyframes clip3{
+    0%{clip-path: polygon(-100% -150%, -50% -150%, -150% -50%, -200% -50%);}
+    100%{clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);}
+  }
+  @keyframes clip4{
+    0%{clip-path: polygon(150% -150%, 200% -150%, 300% -50%, 250% -50%);}
+    100%{clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);}
+  }
+  .clip{
+      position: absolute;
+      background-attachment: fixed;
+      width:100%;
+      height:100vh;
+      background: url(../../../assets/images/anaiskhelif.webp) no-repeat center;
+      transform-origin:center;
+  }
+  #clip1 { 
+    animation:clip1 4s linear infinite;
+    position: absolute; 
+
+    }
+  #clipa {
+      transform: scale(1.1,1.1);
+      animation:clipa 9s linear infinite;
+      position: absolute;  
+  }
+  #clip2 {
+      transform: scale(1.12,1.12); 
+      animation:clip2 5s linear infinite;
+      position: absolute;  
+  }
+  #clipb {
+      transform: scale(1.14,1.14);
+      animation:clipb 4s linear infinite;
+      position: absolute;  
+  }
+  #clip3 {
+      transform: scale(1.15,1.15);
+      animation:clip3 7s linear infinite;
+      position: absolute;  
+  }
+  #clip4 {
+      transform: scale(1.13,1.13);
+      animation:clip4 6s linear infinite;
+      position: absolute;  
+  }
+
+  .clip::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); 
 }
