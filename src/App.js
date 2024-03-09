@@ -17,9 +17,12 @@ function App() {
 
 export default App;
 
-//revoir
-//transition ouverture modale
+//revoir :
+
 //image : trouver le texte + changer image
+//revoir responsive 
+        
+
 
 
 

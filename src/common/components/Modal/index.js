@@ -1,28 +1,29 @@
 import './style.css';
 import Tag from "../Tag";
-import React, { useRef, useEffect  } from 'react';
+import React, { useRef, useEffect, useState  } from 'react';
 
 function Modal({ project, onClose }) {
     const modalRef = useRef(null); 
-
-    const handleClickOutside = (event) => {
-        if (modalRef.current && !modalRef.current.contains(event.target)) {
-            onClose(); // Fermer la modal si l'événement de clic est en dehors de la modal
-        }
-    };
+    const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        document.addEventListener('mousedown', handleClickOutside);
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, []);
+        if (project) {
+            setIsOpen(true);
+        }
+    }, [project]);
+
+    const handleClose = () => {
+        setIsOpen(false);
+        setTimeout(() => {
+            onClose();
+        }, 300); // Temps de transition, ajustez selon la durée de votre animation CSS
+    };
 
     return (
-        <section className='section-modal open'>
-            <div className="backdrop" onClick={onClose}></div> {/* Ajouter un gestionnaire d'événements pour fermer la modal */}
+        <section className={`section-modal ${isOpen ? 'open' : ''}`}>
+            <div className="backdrop" onClick={handleClose}></div>
             <div className="modal" ref={modalRef}>
-                <button className="close-modal" onClick={onClose}>X</button>
+                <button className="close-modal" onClick={handleClose}>x</button>
                 <img src={project.image} alt={project.name} />
                 <h2>{project.name}</h2>
                 <p className='project-date'><i>Date: {project.date}</i></p>
@@ -33,8 +34,7 @@ function Modal({ project, onClose }) {
                 </div>
                 <p className='project-description'>{project.description}</p>
                 <div className='buttons-modal'>
-                    <a className='button-modal' href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <button className='button-modal' onClick={onClose}>Fermer</button>
+                    <a className='button-modal-git' href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
             </div>
         </section>

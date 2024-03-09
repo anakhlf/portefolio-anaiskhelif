@@ -1,4 +1,5 @@
 .section-modal {
+    position: fixed;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
@@ -8,6 +9,7 @@
     opacity: 1;
     visibility: visible;
     transition: opacity 0.3s ease-in-out, visibility 0s linear;
+    z-index: 1004;
 }
 
 .backdrop {
@@ -20,6 +22,8 @@
     z-index: 1002; 
 }
 
+
+
 .modal {
     position: fixed;
     top: 50%;
@@ -29,13 +33,31 @@
     padding: 20px 60px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1003;
-    max-width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-y: auto;
     max-height: 600px;
+    width: 104vh;
 }
+
+.modal::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .modal::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px; /* Arrondi pour la piste de défilement */
+  }
+  
+  .modal::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Couleur de la poignée */
+    border-radius: 10px; /* Arrondi pour la poignée */
+  }
+  
+  .modal::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.4); /* Couleur de la poignée au survol */
+  }
 
 .close-modal {
     position: absolute;
@@ -45,13 +67,14 @@
     border: none;
     cursor: pointer;
     font-size: 20px;
-    font-weight: medium;
-    color: #999;
+    font-weight: 500;
+    color: #8d8c8c;
 }
 
 .close-modal:hover {
-    color: #000; /* Changement de couleur lorsqu'on survole */
+    color: #343333;
 }
+
 
 .modal img {
     width: 100%;
@@ -96,6 +119,10 @@
     gap: 7px;
 }
 
+.modal a:hover {
+    background-color: #626C5F;
+}
+
 .button-modal,
 .modal a {
     background-color: #2C322E;
@@ -113,16 +140,23 @@
     align-items: center;
 }
 
-
-
-.modal button:hover,
-.modal a:hover {
-    background-color: #626C5F;
+@media only screen and (max-width: 768px) {
+    .modal {
+        max-width: 70%
+    }
 }
+
 
 @media only screen and (max-width: 425px) {
     .modal {
-        width: 90%;
         padding: 20px 30px;
+        max-width: 65%;
+    }
+    .modal-tags {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .close-modal {
+        right: 10px;
     }
 }

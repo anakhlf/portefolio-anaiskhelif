@@ -2,6 +2,7 @@
     height: 50px;
     width: auto;
     padding-right: 10vh;
+    
 }
 
 #nav ul {
@@ -49,7 +50,6 @@
     flex-direction: column; 
     background-color: #EFEFEF;
     width: 100%;
-    margin-top: 10px;
   }
 
   #nav ul {
