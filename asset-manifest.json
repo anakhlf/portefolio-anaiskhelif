@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "./static/css/main.002c2335.css",
+    "main.css": "./static/css/main.b28206e5.css",
     "main.js": "./static/js/main.2a17c2b4.js",
     "static/media/CV_2023_anaiskhelif.pdf": "./static/media/CV_2023_anaiskhelif.4b030e71327bdfe7cc83.pdf",
     "static/media/anaiskhelif.webp": "./static/media/anaiskhelif.46fab20fedef462ab54d.webp",
     "static/media/Valkyrie-Regular.ttf": "./static/media/Valkyrie-Regular.bb3bbaab97932b23531c.ttf",
     "static/media/Valkyrie-Extended.ttf": "./static/media/Valkyrie-Extended.9d9723db455abc333cf0.ttf",
     "static/media/Valkyrie-BoldExtended.ttf": "./static/media/Valkyrie-BoldExtended.c31c7651c8c2fee318c2.ttf",
+    "static/media/anaiskhelif-mobile.webp": "./static/media/anaiskhelif-mobile.1a4331cae7c69bca4622.webp",
     "index.html": "./index.html",
-    "main.002c2335.css.map": "./static/css/main.002c2335.css.map",
+    "main.b28206e5.css.map": "./static/css/main.b28206e5.css.map",
     "main.2a17c2b4.js.map": "./static/js/main.2a17c2b4.js.map"
   },
   "entrypoints": [
-    "static/css/main.002c2335.css",
+    "static/css/main.b28206e5.css",
     "static/js/main.2a17c2b4.js"
   ]
 }
