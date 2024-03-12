@@ -24,7 +24,6 @@
 
 #menu {
     z-index: 1003;
-    position: fixed; /* Ajoutez cette ligne */
     top: 0; /* Ajoutez cette ligne */
     left: 0; /* Ajoutez cette ligne */
     display: flex;
@@ -37,8 +36,11 @@
 }
 
 .fixed-menu {
+    position: fixed;
     top: 0;
-    z-index: 1000;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ajustez le z-index selon vos besoins */
 }
 
 #nom-logo {
@@ -61,7 +63,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
     #menu {
         display: flex;
         flex-direction: column;
@@ -78,7 +80,7 @@
         padding-right: 0;
     }
     
-    #nav.open {
+    #menu.open {
         display: block;
         margin-top: -11px;
     }
@@ -106,7 +108,7 @@
         text-align: center;
     }
 
-    nav.open ul {
+    menu.open ul {
         display: block;
         background-color: white;
     }
@@ -116,8 +118,9 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     #nav ul {
         display: block;
+        background-color: white
     }
 }

@@ -11,7 +11,6 @@ function Gallery() {
 
     const openModal = (project) => {
         setSelectedProject(project); // Mettre à jour l'état avec le projet sélectionné
-        console.log('modal open');
     };
 
     const closeModal = () => {

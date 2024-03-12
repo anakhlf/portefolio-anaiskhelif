@@ -1,16 +1,19 @@
 @font-face {
   font-family: 'Valkyrie-Regular';
   src: url('./assets/fonts/Valkyrie-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Valkyrie-Extended';
   src: url('./assets/fonts/Valkyrie-Extended.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Valkyrie-BoldExtended';
   src: url('./assets/fonts/Valkyrie-BoldExtended.ttf') format('truetype');
+  font-display: swap;
 }
 
 * {
@@ -28,6 +31,8 @@ body {
 
 h1 {
   font-family: 'Valkyrie-Extended';
+  src: url('./assets/fonts/Valkyrie-Extended.ttf') format('woff2'),
+         url('./assets/fonts/Valkyrie-BoldExtended.ttf') format('woff');
   font-size: 70px;
   text-transform: uppercase;
 }

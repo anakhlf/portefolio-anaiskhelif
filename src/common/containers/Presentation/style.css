@@ -12,12 +12,13 @@
 
 #presentation p {
     line-height: 1.5;
-    width: 70%;
+    font-size: 16px;
+    width: 60%;
 }
 
 
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     #presentation {
         width: 100%;
     }

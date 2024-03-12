@@ -96,6 +96,12 @@
 
 .modal .project-description {
     margin: 10px 0 20px 0;
+    text-align: left;
+}
+
+.modal .project-description li {
+    list-style-type:none;
+    padding-left: 30px;
 }
 
 .modal-tags {
@@ -140,14 +146,14 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 767.98px) {
     .modal {
         max-width: 70%
     }
 }
 
 
-@media only screen and (max-width: 425px) {
+@media (max-width: 425px) {
     .modal {
         padding: 20px 30px;
         max-width: 65%;

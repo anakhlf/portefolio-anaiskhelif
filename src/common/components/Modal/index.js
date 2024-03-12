@@ -24,7 +24,7 @@ function Modal({ project, onClose }) {
             <div className="backdrop" onClick={handleClose}></div>
             <div className="modal" ref={modalRef}>
                 <button className="close-modal" onClick={handleClose}>x</button>
-                <img src={project.image} alt={project.name} />
+                <img loading="lazy" src={project.image} alt={project.name} />
                 <h2>{project.name}</h2>
                 <p className='project-date'><i>Date: {project.date}</i></p>
                 <div className="modal-tags">
@@ -32,7 +32,7 @@ function Modal({ project, onClose }) {
                         <Tag key={index} name={tag} />
                     ))}
                 </div>
-                <p className='project-description'>{project.description}</p>
+                <p className='project-description' dangerouslySetInnerHTML={{ __html: project.description }}></p>
                 <div className='buttons-modal'>
                     <a className='button-modal-git' href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
