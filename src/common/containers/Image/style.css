@@ -161,6 +161,7 @@
 
     .clip {
         max-height:100vh;
+        background: url(../../../assets/images/anaiskhelif-mobile.webp) no-repeat center;
     }
     
     #image h1 {
