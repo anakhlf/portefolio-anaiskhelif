@@ -63,7 +63,7 @@
     cursor: pointer;
     background-color: rgb(239, 239, 239);
     transition: background-color 0.3s ease, color 0.3s ease;
-    outline: none; /* Supprimer la bordure de focus par défaut */
+    outline: none;
 }
 
 #nav ul li button:hover,
