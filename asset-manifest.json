@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.a0369763.css",
-    "main.js": "./static/js/main.e4d19296.js",
+    "main.js": "./static/js/main.820f93ff.js",
     "static/media/CV_2023_anaiskhelif.pdf": "./static/media/CV_2023_anaiskhelif.4b030e71327bdfe7cc83.pdf",
     "static/media/anaiskhelif.webp": "./static/media/anaiskhelif.46fab20fedef462ab54d.webp",
     "static/media/Valkyrie-Regular.ttf": "./static/media/Valkyrie-Regular.bb3bbaab97932b23531c.ttf",
@@ -10,10 +10,10 @@
     "static/media/anaiskhelif-mobile.webp": "./static/media/anaiskhelif-mobile.1a4331cae7c69bca4622.webp",
     "index.html": "./index.html",
     "main.a0369763.css.map": "./static/css/main.a0369763.css.map",
-    "main.e4d19296.js.map": "./static/js/main.e4d19296.js.map"
+    "main.820f93ff.js.map": "./static/js/main.820f93ff.js.map"
   },
   "entrypoints": [
     "static/css/main.a0369763.css",
-    "static/js/main.e4d19296.js"
+    "static/js/main.820f93ff.js"
   ]
 }
