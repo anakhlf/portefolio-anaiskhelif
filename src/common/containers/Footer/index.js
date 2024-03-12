@@ -7,9 +7,6 @@ function Footer(){
                 <a href="mailto:khelif.anaispro@email.com" aria-label="Envoyer un e-mail à Anaïs Khelif">
                     <i className="fa-solid fa-envelope" ></i>
                 </a>
-                <a href="https://www.linkedin.com/in/ana%C3%AFs-khelif/" aria-label="Profil LinkedIn d'Anaïs Khelif" target="_blank" rel="noopener noreferrer">
-                    <i className="fa-brands fa-linkedin-in"></i>
-                </a>
             </div>
             <p>© 2024 Anaïs KHELIF, Tous droits réservés.</p>
         </footer>
