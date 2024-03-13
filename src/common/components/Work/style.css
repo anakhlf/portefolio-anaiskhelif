@@ -19,16 +19,17 @@
 .title-overlay {
     position: absolute;
     bottom: 0;
-    width: 221px;
+    width: 100%; 
     background: linear-gradient(rgba(0,0,0,1), transparent);
     padding: 10px;
     color: white;
-    display: none; /* Par défaut, le titre est caché */
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
     text-align: left;
 }
 
 .title-overlay.show {
-    display: block; /* Afficher le titre uniquement lorsque survolé */
+    opacity: 1; 
 }
 
 .div-tag {

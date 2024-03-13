@@ -19,7 +19,7 @@ function Skill({ id, iconClass, title, skills }) {
             </div>
             <div className="skill-details">
                 <h3 className="title">{title}</h3>
-                <ul className="skill-list"> {/* Remplace la div par un ul */}
+                <ul className="skill-list"> 
                     {skills.map((skill, index) => (
                         <li key={index}>{skill}</li> 
                     ))}

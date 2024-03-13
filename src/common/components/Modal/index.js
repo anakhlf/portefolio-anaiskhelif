@@ -16,7 +16,7 @@ function Modal({ project, onClose }) {
         setIsOpen(false);
         setTimeout(() => {
             onClose();
-        }, 300); // Temps de transition, ajustez selon la durée de votre animation CSS
+        }, 300); 
     };
 
     return (

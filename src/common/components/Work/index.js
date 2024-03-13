@@ -19,17 +19,10 @@ function Work({ project, onClick }) {
             onMouseLeave={() => setIsHovered(false)}
         >
             <div className="work-title" style={{ backgroundImage: `url(${project.image})` }}>
-                <CSSTransition
-                    in={isHovered}
-                    timeout={500}
-                    classNames="background-size"
-                    unmountOnExit
-                >
-                    <div className="title-overlay">
-                        <h4>{project.name}</h4>
-                        <p>{project.date}</p>
-                    </div>
-                </CSSTransition>
+                <div className={`title-overlay ${isHovered ? 'show' : ''}`}>
+                    <h4>{project.name}</h4>
+                    <p>{project.date}</p>
+                </div>
             </div>
             <div className="div-tag">
                 {project.tags.map((tag, index) => (
